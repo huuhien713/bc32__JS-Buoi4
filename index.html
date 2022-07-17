@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BTN_14</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+  </head>
+  <body>
+    <div class="container my-5 d-flex flex-wrap">
+        <!-- BÀI TẬP 1 -->
+        <div class="w-50 p-3">
+            <div class="card">
+                <h2 class="text-center py-3">Bài Tập 1:</h2>
+                <div class="card-header">
+                    <h4>Viết chương trình nhập vào 3 số nguyên, In ra thứ tự tăng dần của 3 số nguyên đó</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label>Nhập số nguyên thứ 1:</label>
+                        <input id="soNguyen1" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Nhập số nguyên thứ 2:</label>
+                        <input id="soNguyen2" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Nhập số nguyên thứ 3:</label>
+                        <input id="soNguyen3" class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="alert alert-primary text-center mb-0">
+                        <button id="btnTangDan" class="btn btn-primary my-3">
+                            Sắp xếp
+                        </button>
+                        <br>
+                        Kết quả là: <span id="ketQua"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BÀI TẬP 2 -->
+        <div class="w-50 p-3 ">
+            <div class="card h-100">
+                <h2 class="text-center py-3">Bài Tập 2:</h2>
+                <div class="card-header">
+                    <h4>Viết chương trình chào hỏi thành viên trong gia đình</h4>
+                </div>
+                <div class="card-body">        
+                    <div class="form-group mb-0">
+                        <input id="nhapTenNguoiDung" class="form-control" type="text" placeholder="Vui lòng cho biết ai đang sử dụng">   
+                        <button id="btnNhapTen" class="btn btn-primary mt-3">Nhập</button>      
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="alert alert-primary text-center mb-0">
+                        <span id="loiChao"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BÀI TẬP 3 -->
+        <div class="w-50 p-3">
+            <div class="card">
+                <h2 class="text-center py-3">Bài Tập 3:</h2>
+                <div class="card-header">
+                    <h4>Viết chương trình nhập vào 3 số nguyên, In ra bao nhiêu số lẽ và bao nhiêu số chẵn</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label>Nhập số nguyên thứ 1:</label>
+                        <input id="soNguyen-1" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Nhập số nguyên thứ 2:</label>
+                        <input id="soNguyen-2" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Nhập số nguyên thứ 3:</label>
+                        <input id="soNguyen-3" class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="alert alert-primary text-center mb-0">
+                        <button id="btnChanLe" class="btn btn-primary my-3">
+                            Sắp xếp
+                        </button>
+                        <br>
+                        Kết quả: <span id="xuatChanLe"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BÀI TẬP 4 -->
+        <div class="w-50 p-3">
+            <div class="card">
+                <h2 class="text-center py-3">Bài Tập 4:</h2>
+                <div class="card-header">
+                    <h4>Viết chương trình nhập vào 3 cạnh của 1 tam giác nguyên, In ra loại tam giác</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label>Nhập cạnh a:</label>
+                        <input id="canhA" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Nhập cạnh b:</label>
+                        <input id="canhB" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label>Nhập cạnh c:</label>
+                        <input id="canhC" class="form-control" type="text">
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="alert alert-primary text-center mb-0">
+                        <button id="btnTamGiac" class="btn btn-primary my-3">
+                            Phân Loại
+                        </button>
+                        <br>
+                        Kết quả đây là : <span id="loaiTamGiac"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container my-5 d-flex flex-wrap">
+        <!-- BÀI TẬP 1 -->
+        <div class="w-100 p-3">
+            <h3 class="my-3">Bài tập 1:</h3>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Nhập vào Ngày Tháng Năm, In ra Ngày Tháng Năm của ngày tiếp theo</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <label>Nhập Ngày:</label><input id="inputDay" class="form-control" type="number">
+                            <p></p>
+                        </div>
+                        <div class="col-4">
+                            <label>Nhập Tháng:</label><input id="inputMonth" class="form-control" type="number">
+                            <p></p>
+                        </div>
+                        <div class="col-4">
+                            <label>Nhập Năm:</label><input id="inputYear" class="form-control" type="number">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="btnNextDay" class="btn btn-info mb-3">Result</button>
+                    <div class="alert alert-info">
+                        <span id="resultNextDay"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BÀI TẬP 2 -->
+        <div class="w-100 p-3">
+            <h3 class="my-3">Bài tập 2:</h3>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Nhập vào Tháng Năm, In ra Tháng Năm đó có bao nhiêu ngày</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <label>Nhập Tháng:</label><input id="inputMonth2" class="form-control" type="number">
+                            <p></p>
+                        </div>
+                        <div class="col-6">
+                            <label>Nhập Năm:</label><input id="inputYear2" class="form-control" type="number">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="btnDay" class="btn btn-info mb-3">Kết Quả</button>
+                    <div class="alert alert-info">
+                        <span id="resultDay"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BÀI TẬP 3 -->
+        <div class="w-50 p-3">
+            <h3 class="my-3">Bài tập 3:</h3>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Nhập vào số Nguyên có 3 chữ số, In ra cách đọc nó</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <label>Nhập số Nguyên có 3 chữ số:</label><input id="soNguyen3ChuSo" class="form-control" type="number">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="btnDoc" class="btn btn-info mb-3">ĐỌC</button>
+                    <div class="alert alert-info">
+                        <span id="cachDoc"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BÀI TẬP 4 -->
+        <div class="w-75 p-3">
+            <h3 class="my-3">Bài tập 4:</h3>
+            <div class="card">
+                <div class="card-header">
+                    <h3>Nhập tên và tọa độ nhà 3 học sinh, cho biết tọa độ trường đại học, viết chương trình in sinh viên xa trường nhất</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <label>Nhập tên SV1:</label><input id="tenSV1" class="form-control d-inline-block" type="text">
+                        </div>
+                        <div class="col-4">
+                            <label>Nhập tung độ SV1:</label><input id="tungDoSV1" class="form-control" type="text">
+                        </div>
+                        <div class="col-4">
+                            <label>Nhập hoành độ SV1:</label><input id="hoanhDoSV1" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label>Nhập tên SV2:</label><input id="tenSV2" class="form-control d-inline-block" type="text">
+                        </div>
+                        <div class="col-4">
+                            <label>Nhập tung độ SV2:</label><input id="tungDoSV2" class="form-control" type="text">
+                        </div>
+                        <div class="col-4">
+                            <label>Nhập hoành độ SV2:</label><input id="hoanhDoSV2" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label>Nhập tên SV3:</label><input id="tenSV3" class="form-control d-inline-block" type="text">
+                        </div>
+                        <div class="col-4">
+                            <label>Nhập tung độ SV3:</label><input id="tungDoSV3" class="form-control" type="text">
+                        </div>
+                        <div class="col-4">
+                            <label>Nhập hoành độ SV3:</label><input id="hoanhDoSV3" class="form-control" type="text">
+                        </div>
+                    </div><div class="row">
+                        <div class="col-4">
+                            <label>Tên Trường:</label><input class="form-control d-inline-block" type="text" placeholder="Khoa Học Tự Nhiên - TPHCM" disabled>
+                        </div>
+                        <div class="col-4">
+                            <label>Nhập tung độ Trường:</label><input id="tungDoTruong" class="form-control" type="text">
+                        </div>
+                        <div class="col-4">
+                            <label>Nhập hoành độ Trường:</label><input id="hoanhDoTruong" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <button id="btnXaNhat" class="btn btn-info mb-3">Tính Khoảng Cách</button>
+                    <div class="alert alert-info">
+                        <span id="xaNhat"></span>
+                    </div>
+                    <div class="alert alert-info">
+                        <span id="ganNhat"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
